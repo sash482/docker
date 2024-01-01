@@ -11,6 +11,8 @@ services:
     restart: unless-stopped
     depends_on:
       - broker
+      - gotenberg
+      - tika
     ports:
       - 8810:8000
     healthcheck:
